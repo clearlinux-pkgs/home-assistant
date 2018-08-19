@@ -4,7 +4,7 @@
 #
 Name     : home-assistant
 Version  : 0.76.0
-Release  : 1
+Release  : 2
 URL      : https://github.com/home-assistant/home-assistant/archive/0.76.0.tar.gz
 Source0  : https://github.com/home-assistant/home-assistant/archive/0.76.0.tar.gz
 Summary  : No detailed summary available
@@ -14,6 +14,10 @@ Requires: home-assistant-bin
 Requires: home-assistant-python3
 Requires: home-assistant-license
 Requires: home-assistant-python
+Requires: PyJWT
+Requires: aiohttp
+Requires: astral
+Requires: async-timeout
 BuildRequires : SQLAlchemy
 BuildRequires : async-timeout
 BuildRequires : buildreq-distutils3
@@ -65,7 +69,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1534624448
+export SOURCE_DATE_EPOCH=1534700413
 python3 setup.py build -b py3
 
 %install
