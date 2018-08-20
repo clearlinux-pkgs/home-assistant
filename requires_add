@@ -4,3 +4,5 @@ async-timeout
 aiohttp
 astral
 PyJWT
+voluptuous
+libstoragemgmt-python3
