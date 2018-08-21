@@ -6,3 +6,14 @@ astral
 PyJWT
 voluptuous
 libstoragemgmt-python3
+aiohttp-cors
+envs
+gTTS-token
+mutagen
+netdisco
+python-jose-cryptodome
+ua-parser
+user-agents
+voluptuous-serialize
+xmltodict
+zeroconf
