@@ -4,7 +4,7 @@
 #
 Name     : home-assistant
 Version  : 0.76.2
-Release  : 7
+Release  : 8
 URL      : https://github.com/home-assistant/home-assistant/archive/0.76.2.tar.gz
 Source0  : https://github.com/home-assistant/home-assistant/archive/0.76.2.tar.gz
 Summary  : No detailed summary available
