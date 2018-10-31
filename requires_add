@@ -1,18 +1,21 @@
 # This file contains additional runtime requirements that did not get
 # picked up automatically. One name per line, no whitespace.
-async-timeout
-aiohttp
-astral
 PyJWT
-voluptuous
-libstoragemgmt-python3
+PyQRCode
+aiohttp
 aiohttp-cors
+astral
+async-timeout
+bcrypt
 envs
 gTTS-token
+libstoragemgmt-python3
 mutagen
 netdisco
+pyotp
 ua-parser
 user-agents
+voluptuous
 voluptuous-serialize
 xmltodict
 zeroconf

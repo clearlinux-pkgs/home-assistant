@@ -4,7 +4,7 @@
 #
 Name     : home-assistant
 Version  : 0.81.2
-Release  : 29
+Release  : 30
 URL      : https://github.com/home-assistant/home-assistant/archive/0.81.2.tar.gz
 Source0  : https://github.com/home-assistant/home-assistant/archive/0.81.2.tar.gz
 Summary  : No detailed summary available
@@ -15,15 +15,18 @@ Requires: home-assistant-license = %{version}-%{release}
 Requires: home-assistant-python = %{version}-%{release}
 Requires: home-assistant-python3 = %{version}-%{release}
 Requires: PyJWT
+Requires: PyQRCode
 Requires: aiohttp
 Requires: aiohttp-cors
 Requires: astral
 Requires: async-timeout
+Requires: bcrypt
 Requires: envs
 Requires: gTTS-token
 Requires: libstoragemgmt-python3
 Requires: mutagen
 Requires: netdisco
+Requires: pyotp
 Requires: ua-parser
 Requires: user-agents
 Requires: voluptuous
@@ -81,7 +84,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1540904648
+export SOURCE_DATE_EPOCH=1541021076
 python3 setup.py build
 
 %install
