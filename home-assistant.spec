@@ -4,7 +4,7 @@
 #
 Name     : home-assistant
 Version  : 0.81.6
-Release  : 33
+Release  : 34
 URL      : https://github.com/home-assistant/home-assistant/archive/0.81.6.tar.gz
 Source0  : https://github.com/home-assistant/home-assistant/archive/0.81.6.tar.gz
 Summary  : No detailed summary available
@@ -22,6 +22,7 @@ Requires: astral
 Requires: async-timeout
 Requires: bcrypt
 Requires: envs
+Requires: eternalegypt
 Requires: gTTS-token
 Requires: libstoragemgmt-python3
 Requires: mutagen
@@ -84,7 +85,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1541347955
+export SOURCE_DATE_EPOCH=1541746899
 python3 setup.py build
 
 %install

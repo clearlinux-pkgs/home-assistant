@@ -8,6 +8,7 @@ astral
 async-timeout
 bcrypt
 envs
+eternalegypt
 gTTS-token
 libstoragemgmt-python3
 mutagen
