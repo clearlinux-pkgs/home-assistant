@@ -4,7 +4,7 @@
 #
 Name     : home-assistant
 Version  : 0.82.1
-Release  : 37
+Release  : 38
 URL      : https://github.com/home-assistant/home-assistant/archive/0.82.1.tar.gz
 Source0  : https://github.com/home-assistant/home-assistant/archive/0.82.1.tar.gz
 Summary  : No detailed summary available
@@ -82,11 +82,14 @@ python3 components for the home-assistant package.
 %setup -q -n home-assistant-0.82.1
 
 %build
+## build_prepend content
+sed -i 's/==/>=/g' setup.py
+## build_prepend end
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1542314670
+export SOURCE_DATE_EPOCH=1542397054
 python3 setup.py build
 
 %install
