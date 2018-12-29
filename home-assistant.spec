@@ -4,7 +4,7 @@
 #
 Name     : home-assistant
 Version  : 0.84.6
-Release  : 46
+Release  : 47
 URL      : https://github.com/home-assistant/home-assistant/archive/0.84.6.tar.gz
 Source0  : https://github.com/home-assistant/home-assistant/archive/0.84.6.tar.gz
 Summary  : No detailed summary available
