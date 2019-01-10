@@ -4,7 +4,7 @@
 #
 Name     : home-assistant
 Version  : 0.85.0
-Release  : 48
+Release  : 49
 URL      : https://github.com/home-assistant/home-assistant/archive/0.85.0.tar.gz
 Source0  : https://github.com/home-assistant/home-assistant/archive/0.85.0.tar.gz
 Summary  : Open-source home automation platform running on Python 3
@@ -28,6 +28,7 @@ Requires: libstoragemgmt-python3
 Requires: mutagen
 Requires: netdisco
 Requires: pyotp
+Requires: python-slugify
 Requires: ruamel-yaml
 Requires: ua-parser
 Requires: user-agents
@@ -89,7 +90,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1547092020
+export SOURCE_DATE_EPOCH=1547134961
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 

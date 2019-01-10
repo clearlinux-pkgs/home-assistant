@@ -21,3 +21,4 @@ voluptuous
 voluptuous-serialize
 xmltodict
 zeroconf
+python-slugify
