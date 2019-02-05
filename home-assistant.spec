@@ -4,7 +4,7 @@
 #
 Name     : home-assistant
 Version  : 0.86.4
-Release  : 55
+Release  : 56
 URL      : https://github.com/home-assistant/home-assistant/archive/0.86.4.tar.gz
 Source0  : https://github.com/home-assistant/home-assistant/archive/0.86.4.tar.gz
 Summary  : No detailed summary available
@@ -14,6 +14,7 @@ Requires: home-assistant-bin = %{version}-%{release}
 Requires: home-assistant-license = %{version}-%{release}
 Requires: home-assistant-python = %{version}-%{release}
 Requires: home-assistant-python3 = %{version}-%{release}
+Requires: Jinja2
 Requires: PyJWT
 Requires: PyQRCode
 Requires: aiohttp
@@ -90,7 +91,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1548807818
+export SOURCE_DATE_EPOCH=1549391970
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 

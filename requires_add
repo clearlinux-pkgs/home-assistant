@@ -1,5 +1,6 @@
 # This file contains additional runtime requirements that did not get
 # picked up automatically. One name per line, no whitespace.
+Jinja2
 PyJWT
 PyQRCode
 aiohttp
@@ -14,6 +15,7 @@ libstoragemgmt-python3
 mutagen
 netdisco
 pyotp
+python-slugify
 ruamel-yaml
 ua-parser
 user-agents
@@ -21,4 +23,3 @@ voluptuous
 voluptuous-serialize
 xmltodict
 zeroconf
-python-slugify
