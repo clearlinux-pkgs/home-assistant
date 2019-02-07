@@ -3,6 +3,7 @@
 Jinja2
 PyJWT
 PyQRCode
+SQLAlchemy
 aiohttp
 aiohttp-cors
 astral

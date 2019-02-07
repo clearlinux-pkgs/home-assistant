@@ -4,7 +4,7 @@
 #
 Name     : home-assistant
 Version  : 0.87.0
-Release  : 57
+Release  : 58
 URL      : https://github.com/home-assistant/home-assistant/archive/0.87.0.tar.gz
 Source0  : https://github.com/home-assistant/home-assistant/archive/0.87.0.tar.gz
 Summary  : No detailed summary available
@@ -17,6 +17,7 @@ Requires: home-assistant-python3 = %{version}-%{release}
 Requires: Jinja2
 Requires: PyJWT
 Requires: PyQRCode
+Requires: SQLAlchemy
 Requires: aiohttp
 Requires: aiohttp-cors
 Requires: astral
@@ -91,7 +92,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1549499490
+export SOURCE_DATE_EPOCH=1549564199
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
