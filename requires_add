@@ -9,6 +9,7 @@ aiohttp-cors
 astral
 async-timeout
 bcrypt
+distro
 envs
 eternalegypt
 gTTS-token
@@ -17,6 +18,7 @@ mutagen
 netdisco
 pyotp
 python-slugify
+python-openzwave
 ruamel-yaml
 ua-parser
 user-agents
