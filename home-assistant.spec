@@ -4,10 +4,10 @@
 #
 Name     : home-assistant
 Version  : 0.88.1
-Release  : 61
+Release  : 62
 URL      : https://github.com/home-assistant/home-assistant/archive/0.88.1.tar.gz
 Source0  : https://github.com/home-assistant/home-assistant/archive/0.88.1.tar.gz
-Summary  : Open-source home automation platform running on Python 3
+Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-2.0
 Requires: home-assistant-bin = %{version}-%{release}
@@ -23,6 +23,7 @@ Requires: aiohttp-cors
 Requires: astral
 Requires: async-timeout
 Requires: bcrypt
+Requires: distro
 Requires: envs
 Requires: eternalegypt
 Requires: gTTS-token
@@ -30,6 +31,7 @@ Requires: libstoragemgmt-python3
 Requires: mutagen
 Requires: netdisco
 Requires: pyotp
+Requires: python-openzwave
 Requires: python-slugify
 Requires: ruamel-yaml
 Requires: ua-parser
@@ -92,11 +94,13 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1550847011
+export SOURCE_DATE_EPOCH=1551306104
+export LDFLAGS="${LDFLAGS} -fno-lto"
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
 %install
+export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/home-assistant
 cp LICENSE.md %{buildroot}/usr/share/package-licenses/home-assistant/LICENSE.md
