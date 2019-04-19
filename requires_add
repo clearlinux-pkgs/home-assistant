@@ -13,6 +13,7 @@ distro
 envs
 eternalegypt
 gTTS-token
+home-assistant-frontend
 libstoragemgmt-python3
 mutagen
 netdisco
