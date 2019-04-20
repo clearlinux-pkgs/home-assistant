@@ -4,7 +4,7 @@
 #
 Name     : home-assistant
 Version  : 0.91.4
-Release  : 75
+Release  : 76
 URL      : https://github.com/home-assistant/home-assistant/archive/0.91.4/home-assistant-0.91.4.tar.gz
 Source0  : https://github.com/home-assistant/home-assistant/archive/0.91.4/home-assistant-0.91.4.tar.gz
 Summary  : No detailed summary available
