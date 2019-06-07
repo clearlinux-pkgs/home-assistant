@@ -4,10 +4,10 @@
 #
 Name     : home-assistant
 Version  : 0.94.0
-Release  : 86
+Release  : 85
 URL      : https://github.com/home-assistant/home-assistant/archive/0.94.0/home-assistant-0.94.0.tar.gz
 Source0  : https://github.com/home-assistant/home-assistant/archive/0.94.0/home-assistant-0.94.0.tar.gz
-Summary  : No detailed summary available
+Summary  : Open-source home automation platform running on Python 3
 Group    : Development/Tools
 License  : Apache-2.0
 Requires: home-assistant-bin = %{version}-%{release}
@@ -28,7 +28,7 @@ Requires: envs
 Requires: eternalegypt
 Requires: gTTS-token
 Requires: home-assistant-frontend
-Requires: importlib-metadata
+Requires: importlib_metadata
 Requires: libstoragemgmt-python3
 Requires: mutagen
 Requires: netdisco
@@ -57,7 +57,6 @@ BuildRequires : envs
 BuildRequires : eternalegypt
 BuildRequires : gTTS-token
 BuildRequires : home-assistant-frontend
-BuildRequires : importlib-metadata
 BuildRequires : mutagen
 BuildRequires : netdisco
 BuildRequires : pyotp
@@ -121,8 +120,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1559924553
-export GCC_IGNORE_WERROR=1
+export SOURCE_DATE_EPOCH=1559914131
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm

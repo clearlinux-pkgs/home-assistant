@@ -14,7 +14,7 @@ envs
 eternalegypt
 gTTS-token
 home-assistant-frontend
-importlib-metadata
+importlib_metadata
 libstoragemgmt-python3
 mutagen
 netdisco
