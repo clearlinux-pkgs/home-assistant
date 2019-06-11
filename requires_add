@@ -21,7 +21,7 @@ netdisco
 pyotp
 python-slugify
 python-openzwave
-ruamel-yaml
+ruamel.yaml
 ua-parser
 user-agents
 voluptuous

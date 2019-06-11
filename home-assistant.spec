@@ -4,10 +4,10 @@
 #
 Name     : home-assistant
 Version  : 0.94.1
-Release  : 88
+Release  : 89
 URL      : https://github.com/home-assistant/home-assistant/archive/0.94.1/home-assistant-0.94.1.tar.gz
 Source0  : https://github.com/home-assistant/home-assistant/archive/0.94.1/home-assistant-0.94.1.tar.gz
-Summary  : Open-source home automation platform running on Python 3
+Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-2.0
 Requires: home-assistant-bin = %{version}-%{release}
@@ -35,7 +35,7 @@ Requires: netdisco
 Requires: pyotp
 Requires: python-openzwave
 Requires: python-slugify
-Requires: ruamel-yaml
+Requires: ruamel.yaml
 Requires: ua-parser
 Requires: user-agents
 Requires: voluptuous
@@ -62,7 +62,7 @@ BuildRequires : netdisco
 BuildRequires : pyotp
 BuildRequires : python-openzwave
 BuildRequires : python-slugify
-BuildRequires : ruamel-yaml
+BuildRequires : ruamel.yaml
 BuildRequires : ua-parser
 BuildRequires : user-agents
 BuildRequires : voluptuous
@@ -120,7 +120,8 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1560013249
+export SOURCE_DATE_EPOCH=1560272383
+export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
