@@ -4,7 +4,7 @@
 #
 Name     : home-assistant
 Version  : 0.96.0
-Release  : 97
+Release  : 98
 URL      : https://github.com/home-assistant/home-assistant/archive/0.96.0/home-assistant-0.96.0.tar.gz
 Source0  : https://github.com/home-assistant/home-assistant/archive/0.96.0/home-assistant-0.96.0.tar.gz
 Summary  : Open-source home automation platform running on Python 3
