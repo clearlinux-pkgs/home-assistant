@@ -4,7 +4,7 @@
 #
 Name     : home-assistant
 Version  : 0.97.2
-Release  : 102
+Release  : 103
 URL      : https://github.com/home-assistant/home-assistant/archive/0.97.2/home-assistant-0.97.2.tar.gz
 Source0  : https://github.com/home-assistant/home-assistant/archive/0.97.2/home-assistant-0.97.2.tar.gz
 Summary  : No detailed summary available
