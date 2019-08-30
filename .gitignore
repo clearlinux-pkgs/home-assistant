@@ -10,9 +10,6 @@ build.log.round*
 *.tgz
 !*.tar.*.*
 *.zip
-*.jar
-*.pom
-*.xml
 commitmsg
 results/
 rpms/
