@@ -4,7 +4,7 @@
 #
 Name     : home-assistant
 Version  : 0.103.6
-Release  : 128
+Release  : 129
 URL      : https://github.com/home-assistant/home-assistant/archive/0.103.6/home-assistant-0.103.6.tar.gz
 Source0  : https://github.com/home-assistant/home-assistant/archive/0.103.6/home-assistant-0.103.6.tar.gz
 Summary  : Open source home automation that puts local control and privacy first
