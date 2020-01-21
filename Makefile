@@ -1,5 +1,5 @@
 PKG_NAME := home-assistant
-URL = https://github.com/home-assistant/home-assistant/archive/0.104.1/home-assistant-0.104.1.tar.gz
+URL = https://github.com/home-assistant/home-assistant/archive/0.104.3/home-assistant-0.104.3.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
