@@ -4,7 +4,7 @@
 #
 Name     : home-assistant
 Version  : 0.106.1
-Release  : 139
+Release  : 140
 URL      : https://github.com/home-assistant/home-assistant/archive/0.106.1/home-assistant-0.106.1.tar.gz
 Source0  : https://github.com/home-assistant/home-assistant/archive/0.106.1/home-assistant-0.106.1.tar.gz
 Summary  : Open source home automation that puts local control and privacy first
@@ -121,7 +121,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1582908800
+export SOURCE_DATE_EPOCH=1582935192
 # -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
