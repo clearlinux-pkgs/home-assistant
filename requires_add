@@ -9,6 +9,7 @@ aiohttp-cors
 astral
 async-timeout
 bcrypt
+ciso8601
 distro
 envs
 eternalegypt

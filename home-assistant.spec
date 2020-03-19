@@ -4,7 +4,7 @@
 #
 Name     : home-assistant
 Version  : 0.107.0
-Release  : 146
+Release  : 147
 URL      : https://github.com/home-assistant/home-assistant/archive/0.107.0/home-assistant-0.107.0.tar.gz
 Source0  : https://github.com/home-assistant/home-assistant/archive/0.107.0/home-assistant-0.107.0.tar.gz
 Summary  : No detailed summary available
@@ -23,6 +23,7 @@ Requires: aiohttp-cors
 Requires: astral
 Requires: async-timeout
 Requires: bcrypt
+Requires: ciso8601
 Requires: distro
 Requires: envs
 Requires: eternalegypt
@@ -52,6 +53,7 @@ BuildRequires : astral
 BuildRequires : async-timeout
 BuildRequires : bcrypt
 BuildRequires : buildreq-distutils3
+BuildRequires : ciso8601
 BuildRequires : distro
 BuildRequires : envs
 BuildRequires : eternalegypt
@@ -121,7 +123,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1584576524
+export SOURCE_DATE_EPOCH=1584592721
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
