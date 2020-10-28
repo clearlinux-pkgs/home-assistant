@@ -15,6 +15,7 @@ envs
 eternalegypt
 gTTS-token
 home-assistant-frontend
+httpx
 importlib_metadata
 libstoragemgmt-python3
 mutagen

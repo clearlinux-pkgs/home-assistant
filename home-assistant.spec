@@ -4,7 +4,7 @@
 #
 Name     : home-assistant
 Version  : 0.117.0
-Release  : 209
+Release  : 210
 URL      : https://github.com/home-assistant/home-assistant/archive/0.117.0/home-assistant-0.117.0.tar.gz
 Source0  : https://github.com/home-assistant/home-assistant/archive/0.117.0/home-assistant-0.117.0.tar.gz
 Summary  : No detailed summary available
@@ -33,6 +33,7 @@ Requires: envs
 Requires: eternalegypt
 Requires: gTTS-token
 Requires: home-assistant-frontend
+Requires: httpx
 Requires: importlib_metadata
 Requires: libstoragemgmt-python3
 Requires: mutagen
@@ -139,7 +140,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1603919703
+export SOURCE_DATE_EPOCH=1603925158
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
