@@ -4,7 +4,7 @@
 #
 Name     : home-assistant
 Version  : 2020.12.0
-Release  : 226
+Release  : 227
 URL      : https://github.com/home-assistant/home-assistant/archive/2020.12.0/home-assistant-2020.12.0.tar.gz
 Source0  : https://github.com/home-assistant/home-assistant/archive/2020.12.0/home-assistant-2020.12.0.tar.gz
 Summary  : No detailed summary available
