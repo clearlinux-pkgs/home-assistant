@@ -4,7 +4,7 @@
 #
 Name     : home-assistant
 Version  : 2020.12.0
-Release  : 227
+Release  : 228
 URL      : https://github.com/home-assistant/home-assistant/archive/2020.12.0/home-assistant-2020.12.0.tar.gz
 Source0  : https://github.com/home-assistant/home-assistant/archive/2020.12.0/home-assistant-2020.12.0.tar.gz
 Summary  : No detailed summary available
@@ -89,6 +89,7 @@ BuildRequires : voluptuous-serialize
 BuildRequires : xmltodict
 BuildRequires : yarl
 BuildRequires : zeroconf
+Patch1: 0001-Remove-pip-upper-bound-constraint.patch
 
 %description
 Home Assistant |Chat Status|
@@ -132,6 +133,7 @@ python3 components for the home-assistant package.
 %prep
 %setup -q -n core-2020.12.0
 cd %{_builddir}/core-2020.12.0
+%patch1 -p1
 
 %build
 ## build_prepend content
@@ -141,7 +143,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1607962693
+export SOURCE_DATE_EPOCH=1608054377
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib

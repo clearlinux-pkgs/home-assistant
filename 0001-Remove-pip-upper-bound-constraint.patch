@@ -1,0 +1,51 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Patrick McCarty <patrick.mccarty@intel.com>
+Date: Tue, 15 Dec 2020 17:41:54 +0000
+Subject: [PATCH] Remove pip upper bound constraint
+
+Signed-off-by: Patrick McCarty <patrick.mccarty@intel.com>
+---
+ homeassistant/package_constraints.txt | 2 +-
+ requirements.txt                      | 2 +-
+ setup.py                              | 2 +-
+ 3 files changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/homeassistant/package_constraints.txt b/homeassistant/package_constraints.txt
+index 7aa59bd5..b12ba166 100644
+--- a/homeassistant/package_constraints.txt
++++ b/homeassistant/package_constraints.txt
+@@ -20,7 +20,7 @@ jinja2>=2.11.2
+ netdisco==2.8.2
+ paho-mqtt==1.5.1
+ pillow==7.2.0
+-pip>=8.0.3,<20.3
++pip>=8.0.3
+ python-slugify==4.0.1
+ pytz>=2020.1
+ pyyaml==5.3.1
+diff --git a/requirements.txt b/requirements.txt
+index ece1877e..3a376b6e 100644
+--- a/requirements.txt
++++ b/requirements.txt
+@@ -13,7 +13,7 @@ importlib-metadata==1.6.0;python_version<'3.8'
+ jinja2>=2.11.2
+ PyJWT==1.7.1
+ cryptography==3.2
+-pip>=8.0.3,<20.3
++pip>=8.0.3
+ python-slugify==4.0.1
+ pytz>=2020.1
+ pyyaml==5.3.1
+diff --git a/setup.py b/setup.py
+index d5d133d4..885d6e19 100755
+--- a/setup.py
++++ b/setup.py
+@@ -45,7 +45,7 @@ REQUIRES = [
+     "PyJWT==1.7.1",
+     # PyJWT has loose dependency. We want the latest one.
+     "cryptography==3.2",
+-    "pip>=8.0.3,<20.3",
++    "pip>=8.0.3",
+     "python-slugify==4.0.1",
+     "pytz>=2020.1",
+     "pyyaml==5.3.1",
