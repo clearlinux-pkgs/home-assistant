@@ -21,25 +21,13 @@ diff --git a/requirements.txt b/requirements.txt
 index ece1877e..3a376b6e 100644
 --- a/requirements.txt
 +++ b/requirements.txt
-@@ -13,7 +13,7 @@ importlib-metadata==1.6.0;python_version<'3.8'
- jinja2>=2.11.2
- PyJWT==1.7.1
- cryptography==3.2
+@@ -13,1 +13,1 @@ importlib-metadata==1.6.0;python_version<'3.8'
 -pip>=8.0.3,<20.3
 +pip>=8.0.3
- python-slugify==4.0.1
- pytz>=2020.1
- pyyaml==5.3.1
 diff --git a/setup.py b/setup.py
 index d5d133d4..885d6e19 100755
 --- a/setup.py
 +++ b/setup.py
-@@ -45,7 +45,7 @@ REQUIRES = [
-     "PyJWT==1.7.1",
-     # PyJWT has loose dependency. We want the latest one.
-     "cryptography==3.2",
+@@ -45,1 +45,1 @@ REQUIRES = [
 -    "pip>=8.0.3,<20.3",
 +    "pip>=8.0.3",
-     "python-slugify==4.0.1",
-     "pytz>=2020.1",
-     "pyyaml==5.3.1",
