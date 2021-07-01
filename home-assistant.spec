@@ -4,7 +4,7 @@
 #
 Name     : home-assistant
 Version  : 2021.6.6
-Release  : 261
+Release  : 262
 URL      : https://github.com/home-assistant/home-assistant/archive/2021.6.6/home-assistant-2021.6.6.tar.gz
 Source0  : https://github.com/home-assistant/home-assistant/archive/2021.6.6/home-assistant-2021.6.6.tar.gz
 Summary  : No detailed summary available
