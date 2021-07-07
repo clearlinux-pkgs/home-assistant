@@ -1,5 +1,5 @@
 PKG_NAME := home-assistant
-URL = https://github.com/home-assistant/home-assistant/archive/2021.6.6/home-assistant-2021.6.6.tar.gz
+URL = https://github.com/home-assistant/home-assistant/archive/2021.7.0/home-assistant-2021.7.0.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
