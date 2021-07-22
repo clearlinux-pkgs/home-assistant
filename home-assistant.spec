@@ -4,7 +4,7 @@
 #
 Name     : home-assistant
 Version  : 2021.7.3
-Release  : 266
+Release  : 267
 URL      : https://github.com/home-assistant/home-assistant/archive/2021.7.3/home-assistant-2021.7.3.tar.gz
 Source0  : https://github.com/home-assistant/home-assistant/archive/2021.7.3/home-assistant-2021.7.3.tar.gz
 Summary  : No detailed summary available
