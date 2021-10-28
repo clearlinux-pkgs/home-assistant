@@ -4,7 +4,7 @@
 #
 Name     : home-assistant
 Version  : 2021.10.6
-Release  : 288
+Release  : 289
 URL      : https://github.com/home-assistant/home-assistant/archive/2021.10.6/home-assistant-2021.10.6.tar.gz
 Source0  : https://github.com/home-assistant/home-assistant/archive/2021.10.6/home-assistant-2021.10.6.tar.gz
 Summary  : No detailed summary available
