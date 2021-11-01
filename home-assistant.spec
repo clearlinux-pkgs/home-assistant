@@ -4,7 +4,7 @@
 #
 Name     : home-assistant
 Version  : 2021.10.6
-Release  : 290
+Release  : 291
 URL      : https://github.com/home-assistant/home-assistant/archive/2021.10.6/home-assistant-2021.10.6.tar.gz
 Source0  : https://github.com/home-assistant/home-assistant/archive/2021.10.6/home-assistant-2021.10.6.tar.gz
 Summary  : No detailed summary available
@@ -143,7 +143,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1634578718
+export SOURCE_DATE_EPOCH=1635739753
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
