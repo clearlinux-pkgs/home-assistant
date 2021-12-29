@@ -1,11 +1,10 @@
-2021.12.6
+2021.12.7
 pypi(aiohttp)
 pypi(astral)
 pypi(async_timeout)
 pypi(atomicwrites)
 pypi(attrs)
 pypi(awesomeversion)
-pypi(backports.zoneinfo)
 pypi(bcrypt)
 pypi(certifi)
 pypi(ciso8601)
