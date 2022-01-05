@@ -4,7 +4,7 @@
 #
 Name     : home-assistant
 Version  : 2021.12.8
-Release  : 300
+Release  : 301
 URL      : https://github.com/home-assistant/home-assistant/archive/2021.12.8/home-assistant-2021.12.8.tar.gz
 Source0  : https://github.com/home-assistant/home-assistant/archive/2021.12.8/home-assistant-2021.12.8.tar.gz
 Summary  : No detailed summary available
@@ -18,7 +18,6 @@ Requires: Jinja2
 Requires: PyJWT
 Requires: PyQRCode
 Requires: SQLAlchemy
-Requires: aiohttp
 Requires: aiohttp-cors
 Requires: astral
 Requires: async-timeout
@@ -36,6 +35,7 @@ Requires: libstoragemgmt-python3
 Requires: mutagen
 Requires: netdisco
 Requires: pyotp
+Requires: pypi(aiohttp)
 Requires: python-openzwave
 Requires: python-slugify
 Requires: ruamel.yaml
@@ -105,27 +105,6 @@ python components for the home-assistant package.
 Summary: python3 components for the home-assistant package.
 Group: Default
 Requires: python3-core
-Requires: pypi(aiohttp)
-Requires: pypi(astral)
-Requires: pypi(async_timeout)
-Requires: pypi(atomicwrites)
-Requires: pypi(attrs)
-Requires: pypi(awesomeversion)
-Requires: pypi(bcrypt)
-Requires: pypi(certifi)
-Requires: pypi(ciso8601)
-Requires: pypi(cryptography)
-Requires: pypi(httpx)
-Requires: pypi(ifaddr)
-Requires: pypi(jinja2)
-Requires: pypi(pip)
-Requires: pypi(pyjwt)
-Requires: pypi(python_slugify)
-Requires: pypi(pyyaml)
-Requires: pypi(requests)
-Requires: pypi(voluptuous)
-Requires: pypi(voluptuous_serialize)
-Requires: pypi(yarl)
 
 %description python3
 python3 components for the home-assistant package.
@@ -144,7 +123,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641396392
+export SOURCE_DATE_EPOCH=1641400041
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
