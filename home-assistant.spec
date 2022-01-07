@@ -4,7 +4,7 @@
 #
 Name     : home-assistant
 Version  : 2021.12.8
-Release  : 302
+Release  : 303
 URL      : https://github.com/home-assistant/home-assistant/archive/2021.12.8/home-assistant-2021.12.8.tar.gz
 Source0  : https://github.com/home-assistant/home-assistant/archive/2021.12.8/home-assistant-2021.12.8.tar.gz
 Summary  : No detailed summary available
@@ -14,15 +14,8 @@ Requires: home-assistant-bin = %{version}-%{release}
 Requires: home-assistant-license = %{version}-%{release}
 Requires: home-assistant-python = %{version}-%{release}
 Requires: home-assistant-python3 = %{version}-%{release}
-Requires: Jinja2
-Requires: PyJWT
 Requires: SQLAlchemy
 Requires: aiohttp-cors
-Requires: astral
-Requires: async-timeout
-Requires: awesomeversion
-Requires: bcrypt
-Requires: ciso8601
 Requires: distro
 Requires: envs
 Requires: eternalegypt
@@ -42,7 +35,6 @@ Requires: pypi(voluptuous)
 Requires: python-openzwave
 Requires: python-slugify
 Requires: ruamel.yaml
-Requires: voluptuous-serialize
 Requires: xmltodict
 Requires: zeroconf
 BuildRequires : SQLAlchemy
@@ -123,7 +115,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641517564
+export SOURCE_DATE_EPOCH=1641517903
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
