@@ -2,7 +2,7 @@
 # picked up automatically. One name per line, no whitespace.
 Jinja2
 PyJWT
-PyQRCode
+pypi(pyqrcode)
 SQLAlchemy
 pypi(aiohttp)
 aiohttp-cors
@@ -16,8 +16,8 @@ envs
 eternalegypt
 gTTS-token
 home-assistant-frontend
-httpx
-importlib_metadata
+pypi(httpx)
+pypi(importlib_metadata)
 libstoragemgmt-python3
 mutagen
 netdisco
@@ -25,9 +25,9 @@ pyotp
 python-slugify
 python-openzwave
 ruamel.yaml
-ua-parser
-user-agents
-voluptuous
+pypi(ua_parser)
+pypi(user_agents)
+pypi(voluptuous)
 voluptuous-serialize
 xmltodict
 zeroconf

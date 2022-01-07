@@ -4,7 +4,7 @@
 #
 Name     : home-assistant
 Version  : 2021.12.8
-Release  : 301
+Release  : 302
 URL      : https://github.com/home-assistant/home-assistant/archive/2021.12.8/home-assistant-2021.12.8.tar.gz
 Source0  : https://github.com/home-assistant/home-assistant/archive/2021.12.8/home-assistant-2021.12.8.tar.gz
 Summary  : No detailed summary available
@@ -16,7 +16,6 @@ Requires: home-assistant-python = %{version}-%{release}
 Requires: home-assistant-python3 = %{version}-%{release}
 Requires: Jinja2
 Requires: PyJWT
-Requires: PyQRCode
 Requires: SQLAlchemy
 Requires: aiohttp-cors
 Requires: astral
@@ -29,19 +28,20 @@ Requires: envs
 Requires: eternalegypt
 Requires: gTTS-token
 Requires: home-assistant-frontend
-Requires: httpx
-Requires: importlib_metadata
 Requires: libstoragemgmt-python3
 Requires: mutagen
 Requires: netdisco
 Requires: pyotp
 Requires: pypi(aiohttp)
+Requires: pypi(httpx)
+Requires: pypi(importlib_metadata)
+Requires: pypi(pyqrcode)
+Requires: pypi(ua_parser)
+Requires: pypi(user_agents)
+Requires: pypi(voluptuous)
 Requires: python-openzwave
 Requires: python-slugify
 Requires: ruamel.yaml
-Requires: ua-parser
-Requires: user-agents
-Requires: voluptuous
 Requires: voluptuous-serialize
 Requires: xmltodict
 Requires: zeroconf
@@ -123,7 +123,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641400041
+export SOURCE_DATE_EPOCH=1641517564
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
