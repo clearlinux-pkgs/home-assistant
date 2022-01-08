@@ -4,7 +4,7 @@
 #
 Name     : home-assistant
 Version  : 2021.12.8
-Release  : 304
+Release  : 305
 URL      : https://github.com/home-assistant/home-assistant/archive/2021.12.8/home-assistant-2021.12.8.tar.gz
 Source0  : https://github.com/home-assistant/home-assistant/archive/2021.12.8/home-assistant-2021.12.8.tar.gz
 Summary  : No detailed summary available
@@ -14,7 +14,6 @@ Requires: home-assistant-bin = %{version}-%{release}
 Requires: home-assistant-license = %{version}-%{release}
 Requires: home-assistant-python = %{version}-%{release}
 Requires: home-assistant-python3 = %{version}-%{release}
-Requires: SQLAlchemy
 Requires: aiohttp-cors
 Requires: distro
 Requires: envs
@@ -26,19 +25,19 @@ Requires: mutagen
 Requires: netdisco
 Requires: pyotp
 Requires: pypi(aiohttp)
+Requires: pypi(ciso8601)
 Requires: pypi(httpx)
 Requires: pypi(importlib_metadata)
 Requires: pypi(pyqrcode)
+Requires: pypi(python)slugify)
+Requires: pypi(sqlalchemy)
 Requires: pypi(ua_parser)
 Requires: pypi(user_agents)
 Requires: pypi(voluptuous)
+Requires: pypi(xmltodict)
+Requires: pypi(zeroconf)
 Requires: python-openzwave
-Requires: python-slugify
 Requires: ruamel.yaml
-Requires: xmltodict
-Requires: zeroconf
-BuildRequires : SQLAlchemy
-BuildRequires : async-timeout
 BuildRequires : buildreq-distutils3
 BuildRequires : pypi(aiohttp)
 BuildRequires : pypi(astral)
@@ -58,6 +57,7 @@ BuildRequires : pypi(pyjwt)
 BuildRequires : pypi(python_slugify)
 BuildRequires : pypi(pyyaml)
 BuildRequires : pypi(requests)
+BuildRequires : pypi(sqlalchemy)
 BuildRequires : pypi(voluptuous)
 BuildRequires : pypi(voluptuous_serialize)
 BuildRequires : pypi(yarl)
@@ -97,27 +97,6 @@ python components for the home-assistant package.
 Summary: python3 components for the home-assistant package.
 Group: Default
 Requires: python3-core
-Requires: pypi(aiohttp)
-Requires: pypi(astral)
-Requires: pypi(async_timeout)
-Requires: pypi(atomicwrites)
-Requires: pypi(attrs)
-Requires: pypi(awesomeversion)
-Requires: pypi(bcrypt)
-Requires: pypi(certifi)
-Requires: pypi(ciso8601)
-Requires: pypi(cryptography)
-Requires: pypi(httpx)
-Requires: pypi(ifaddr)
-Requires: pypi(jinja2)
-Requires: pypi(pip)
-Requires: pypi(pyjwt)
-Requires: pypi(python_slugify)
-Requires: pypi(pyyaml)
-Requires: pypi(requests)
-Requires: pypi(voluptuous)
-Requires: pypi(voluptuous_serialize)
-Requires: pypi(yarl)
 
 %description python3
 python3 components for the home-assistant package.
@@ -136,7 +115,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641572133
+export SOURCE_DATE_EPOCH=1641604312
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
