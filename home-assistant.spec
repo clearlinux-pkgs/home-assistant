@@ -4,7 +4,7 @@
 #
 Name     : home-assistant
 Version  : 2021.12.8
-Release  : 305
+Release  : 306
 URL      : https://github.com/home-assistant/home-assistant/archive/2021.12.8/home-assistant-2021.12.8.tar.gz
 Source0  : https://github.com/home-assistant/home-assistant/archive/2021.12.8/home-assistant-2021.12.8.tar.gz
 Summary  : No detailed summary available
@@ -29,7 +29,7 @@ Requires: pypi(ciso8601)
 Requires: pypi(httpx)
 Requires: pypi(importlib_metadata)
 Requires: pypi(pyqrcode)
-Requires: pypi(python)slugify)
+Requires: pypi(python_slugify)
 Requires: pypi(sqlalchemy)
 Requires: pypi(ua_parser)
 Requires: pypi(user_agents)
@@ -115,7 +115,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641604312
+export SOURCE_DATE_EPOCH=1641653042
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib

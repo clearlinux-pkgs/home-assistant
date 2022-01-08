@@ -16,7 +16,7 @@ pypi(ua_parser)
 pypi(user_agents)
 pypi(voluptuous)
 python-openzwave
-pypi(python)slugify)
+pypi(python_slugify)
 ruamel.yaml
 pypi(sqlalchemy)
 pypi(xmltodict)
