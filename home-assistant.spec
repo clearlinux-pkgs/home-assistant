@@ -4,7 +4,7 @@
 #
 Name     : home-assistant
 Version  : 2021.12.8
-Release  : 307
+Release  : 308
 URL      : https://github.com/home-assistant/home-assistant/archive/2021.12.8/home-assistant-2021.12.8.tar.gz
 Source0  : https://github.com/home-assistant/home-assistant/archive/2021.12.8/home-assistant-2021.12.8.tar.gz
 Summary  : No detailed summary available
@@ -14,23 +14,24 @@ Requires: home-assistant-bin = %{version}-%{release}
 Requires: home-assistant-license = %{version}-%{release}
 Requires: home-assistant-python = %{version}-%{release}
 Requires: home-assistant-python3 = %{version}-%{release}
-Requires: aiohttp-cors
-Requires: distro
-Requires: envs
-Requires: eternalegypt
 Requires: gTTS-token
 Requires: home-assistant-frontend
 Requires: libstoragemgmt-python3
 Requires: mutagen
-Requires: netdisco
-Requires: pyotp
 Requires: pypi(aiohttp)
+Requires: pypi(aiohttp_cors)
 Requires: pypi(awesomeversion)
 Requires: pypi(ciso8601)
+Requires: pypi(distro)
+Requires: pypi(envs)
+Requires: pypi(eternalegypt)
 Requires: pypi(httpx)
 Requires: pypi(importlib_metadata)
+Requires: pypi(netdisco)
+Requires: pypi(pyotp)
 Requires: pypi(pyqrcode)
 Requires: pypi(python_slugify)
+Requires: pypi(ruamel.yaml)
 Requires: pypi(sqlalchemy)
 Requires: pypi(ua_parser)
 Requires: pypi(user_agents)
@@ -39,7 +40,6 @@ Requires: pypi(voluptuous_serialize)
 Requires: pypi(xmltodict)
 Requires: pypi(zeroconf)
 Requires: python-openzwave
-Requires: ruamel.yaml
 BuildRequires : buildreq-distutils3
 BuildRequires : pypi(aiohttp)
 BuildRequires : pypi(astral)
@@ -117,7 +117,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641681851
+export SOURCE_DATE_EPOCH=1641836616
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
