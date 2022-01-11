@@ -1,7 +1,6 @@
-2021.12.8
+2021.12.9
 pypi(aiohttp)
 pypi(astral)
-pypi(async_timeout)
 pypi(atomicwrites)
 pypi(attrs)
 pypi(awesomeversion)
