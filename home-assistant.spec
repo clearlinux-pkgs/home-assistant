@@ -4,7 +4,7 @@
 #
 Name     : home-assistant
 Version  : 2021.12.9
-Release  : 309
+Release  : 310
 URL      : https://github.com/home-assistant/home-assistant/archive/2021.12.9/home-assistant-2021.12.9.tar.gz
 Source0  : https://github.com/home-assistant/home-assistant/archive/2021.12.9/home-assistant-2021.12.9.tar.gz
 Summary  : No detailed summary available
@@ -20,14 +20,19 @@ Requires: libstoragemgmt-python3
 Requires: mutagen
 Requires: pypi(aiohttp)
 Requires: pypi(aiohttp_cors)
+Requires: pypi(atomicwrites)
 Requires: pypi(awesomeversion)
+Requires: pypi(bcrypt)
 Requires: pypi(ciso8601)
+Requires: pypi(cryptography)
 Requires: pypi(distro)
 Requires: pypi(envs)
 Requires: pypi(eternalegypt)
 Requires: pypi(httpx)
 Requires: pypi(importlib_metadata)
 Requires: pypi(netdisco)
+Requires: pypi(ninja2)
+Requires: pypi(pyjwt)
 Requires: pypi(pyotp)
 Requires: pypi(pyqrcode)
 Requires: pypi(python_slugify)
@@ -99,26 +104,6 @@ python components for the home-assistant package.
 Summary: python3 components for the home-assistant package.
 Group: Default
 Requires: python3-core
-Requires: pypi(aiohttp)
-Requires: pypi(astral)
-Requires: pypi(atomicwrites)
-Requires: pypi(attrs)
-Requires: pypi(awesomeversion)
-Requires: pypi(bcrypt)
-Requires: pypi(certifi)
-Requires: pypi(ciso8601)
-Requires: pypi(cryptography)
-Requires: pypi(httpx)
-Requires: pypi(ifaddr)
-Requires: pypi(jinja2)
-Requires: pypi(pip)
-Requires: pypi(pyjwt)
-Requires: pypi(python_slugify)
-Requires: pypi(pyyaml)
-Requires: pypi(requests)
-Requires: pypi(voluptuous)
-Requires: pypi(voluptuous_serialize)
-Requires: pypi(yarl)
 
 %description python3
 python3 components for the home-assistant package.
@@ -137,7 +122,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641917360
+export SOURCE_DATE_EPOCH=1641937318
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
