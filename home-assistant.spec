@@ -4,7 +4,7 @@
 #
 Name     : home-assistant
 Version  : 2021.12.9
-Release  : 310
+Release  : 311
 URL      : https://github.com/home-assistant/home-assistant/archive/2021.12.9/home-assistant-2021.12.9.tar.gz
 Source0  : https://github.com/home-assistant/home-assistant/archive/2021.12.9/home-assistant-2021.12.9.tar.gz
 Summary  : No detailed summary available
@@ -30,8 +30,8 @@ Requires: pypi(envs)
 Requires: pypi(eternalegypt)
 Requires: pypi(httpx)
 Requires: pypi(importlib_metadata)
+Requires: pypi(jinja2)
 Requires: pypi(netdisco)
-Requires: pypi(ninja2)
 Requires: pypi(pyjwt)
 Requires: pypi(pyotp)
 Requires: pypi(pyqrcode)
@@ -122,7 +122,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641937318
+export SOURCE_DATE_EPOCH=1641938460
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
