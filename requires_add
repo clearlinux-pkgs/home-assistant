@@ -3,7 +3,7 @@ pypi(distro)
 pypi(envs)
 pypi(eternalegypt)
 gTTS-token
-home-assistant-frontend
+pypi(home_assistant_frontend)
 libstoragemgmt-python3
 mutagen
 pypi(netdisco)

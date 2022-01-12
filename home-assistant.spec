@@ -4,7 +4,7 @@
 #
 Name     : home-assistant
 Version  : 2021.12.9
-Release  : 311
+Release  : 312
 URL      : https://github.com/home-assistant/home-assistant/archive/2021.12.9/home-assistant-2021.12.9.tar.gz
 Source0  : https://github.com/home-assistant/home-assistant/archive/2021.12.9/home-assistant-2021.12.9.tar.gz
 Summary  : No detailed summary available
@@ -15,7 +15,6 @@ Requires: home-assistant-license = %{version}-%{release}
 Requires: home-assistant-python = %{version}-%{release}
 Requires: home-assistant-python3 = %{version}-%{release}
 Requires: gTTS-token
-Requires: home-assistant-frontend
 Requires: libstoragemgmt-python3
 Requires: mutagen
 Requires: pypi(aiohttp)
@@ -28,6 +27,7 @@ Requires: pypi(cryptography)
 Requires: pypi(distro)
 Requires: pypi(envs)
 Requires: pypi(eternalegypt)
+Requires: pypi(home_assistant_frontend)
 Requires: pypi(httpx)
 Requires: pypi(importlib_metadata)
 Requires: pypi(jinja2)
@@ -122,7 +122,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641938460
+export SOURCE_DATE_EPOCH=1642006527
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
