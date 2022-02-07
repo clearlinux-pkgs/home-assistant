@@ -4,7 +4,7 @@
 #
 Name     : home-assistant
 Version  : 2022.2.3
-Release  : 314
+Release  : 315
 URL      : https://github.com/home-assistant/home-assistant/archive/2022.2.3/home-assistant-2022.2.3.tar.gz
 Source0  : https://github.com/home-assistant/home-assistant/archive/2022.2.3/home-assistant-2022.2.3.tar.gz
 Summary  : No detailed summary available
@@ -145,7 +145,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1644247931
+export SOURCE_DATE_EPOCH=1644250122
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -155,6 +155,12 @@ export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=auto "
 export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=auto "
 export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=auto "
 export MAKEFLAGS=%{?_smp_mflags}
+pypi-dep-fix.py . attrs
+pypi-dep-fix.py . bcrypt
+pypi-dep-fix.py . httpx
+pypi-dep-fix.py . pip
+pypi-dep-fix.py . PyJWT
+pypi-dep-fix.py . python-slugify
 python3 -m build --wheel --skip-dependency-check --no-isolation
 
 %install
@@ -163,6 +169,12 @@ rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/home-assistant
 cp %{_builddir}/core-2022.2.3/LICENSE.md %{buildroot}/usr/share/package-licenses/home-assistant/7df059597099bb7dcf25d2a9aedfaf4465f72d8d
 pip install --root=%{buildroot} --no-deps --ignore-installed dist/*.whl
+pypi-dep-fix.py %{buildroot} attrs
+pypi-dep-fix.py %{buildroot} bcrypt
+pypi-dep-fix.py %{buildroot} httpx
+pypi-dep-fix.py %{buildroot} pip
+pypi-dep-fix.py %{buildroot} PyJWT
+pypi-dep-fix.py %{buildroot} python-slugify
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
 echo ----[ mark ]----

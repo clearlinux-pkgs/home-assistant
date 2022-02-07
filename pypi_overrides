@@ -1,0 +1,6 @@
+attrs
+bcrypt
+httpx
+pip
+PyJWT
+python-slugify
