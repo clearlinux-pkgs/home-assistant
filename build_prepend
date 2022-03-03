@@ -1,1 +1,1 @@
-sed -i 's/==/>=/g' setup.py
+#sed -i 's/==/>=/g' setup.py
