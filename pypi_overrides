@@ -5,3 +5,4 @@ pip
 PyJWT
 python-slugify
 awesomeversion
+jinja2
