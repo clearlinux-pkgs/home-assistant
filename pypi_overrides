@@ -6,3 +6,4 @@ PyJWT
 python-slugify
 awesomeversion
 jinja2
+voluptuous

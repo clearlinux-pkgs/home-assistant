@@ -4,7 +4,7 @@
 #
 Name     : home-assistant
 Version  : 2022.3.8
-Release  : 332
+Release  : 333
 URL      : https://github.com/home-assistant/home-assistant/archive/2022.3.8/home-assistant-2022.3.8.tar.gz
 Source0  : https://github.com/home-assistant/home-assistant/archive/2022.3.8/home-assistant-2022.3.8.tar.gz
 Summary  : No detailed summary available
@@ -145,7 +145,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1648650992
+export SOURCE_DATE_EPOCH=1648664937
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -163,6 +163,7 @@ pypi-dep-fix.py . PyJWT
 pypi-dep-fix.py . python-slugify
 pypi-dep-fix.py . awesomeversion
 pypi-dep-fix.py . jinja2
+pypi-dep-fix.py . voluptuous
 python3 -m build --wheel --skip-dependency-check --no-isolation
 
 %install
@@ -179,6 +180,7 @@ pypi-dep-fix.py %{buildroot} PyJWT
 pypi-dep-fix.py %{buildroot} python-slugify
 pypi-dep-fix.py %{buildroot} awesomeversion
 pypi-dep-fix.py %{buildroot} jinja2
+pypi-dep-fix.py %{buildroot} voluptuous
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
 echo ----[ mark ]----
