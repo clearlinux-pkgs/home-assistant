@@ -2,7 +2,7 @@ pypi(aiohttp_cors)
 pypi(distro)
 pypi(envs)
 pypi(eternalegypt)
-gTTS-token
+pypi-gtts_token
 pypi(home_assistant_frontend)
 libstoragemgmt-python3
 mutagen
