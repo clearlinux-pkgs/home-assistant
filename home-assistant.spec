@@ -4,7 +4,7 @@
 #
 Name     : home-assistant
 Version  : 2022.4.5
-Release  : 340
+Release  : 341
 URL      : https://github.com/home-assistant/home-assistant/archive/2022.4.5/home-assistant-2022.4.5.tar.gz
 Source0  : https://github.com/home-assistant/home-assistant/archive/2022.4.5/home-assistant-2022.4.5.tar.gz
 Summary  : No detailed summary available
@@ -15,7 +15,6 @@ Requires: home-assistant-license = %{version}-%{release}
 Requires: home-assistant-python = %{version}-%{release}
 Requires: home-assistant-python3 = %{version}-%{release}
 Requires: libstoragemgmt-python3
-Requires: mutagen
 Requires: pypi(aiohttp)
 Requires: pypi(aiohttp_cors)
 Requires: pypi(atomicwrites)
@@ -44,6 +43,7 @@ Requires: pypi(voluptuous_serialize)
 Requires: pypi(xmltodict)
 Requires: pypi(zeroconf)
 Requires: pypi-gtts_token
+Requires: pypi-mutagen
 Requires: python-openzwave
 BuildRequires : buildreq-distutils3
 BuildRequires : pypi(aiohttp)
@@ -145,7 +145,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1650290597
+export SOURCE_DATE_EPOCH=1650510280
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
