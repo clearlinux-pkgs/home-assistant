@@ -7,3 +7,4 @@ python-slugify
 awesomeversion
 jinja2
 voluptuous
+cryptography
