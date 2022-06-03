@@ -4,12 +4,13 @@
 #
 Name     : home-assistant
 Version  : 2022.6.1
-Release  : 352
+Release  : 353
 URL      : https://github.com/home-assistant/home-assistant/archive/2022.6.1/home-assistant-2022.6.1.tar.gz
 Source0  : https://github.com/home-assistant/home-assistant/archive/2022.6.1/home-assistant-2022.6.1.tar.gz
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-2.0
+Requires: home-assistant-bin = %{version}-%{release}
 Requires: home-assistant-license = %{version}-%{release}
 Requires: home-assistant-python = %{version}-%{release}
 Requires: home-assistant-python3 = %{version}-%{release}
@@ -75,6 +76,15 @@ BuildRequires : pypi(yarl)
 Home Assistant |Chat Status|
 =================================================================================
 
+%package bin
+Summary: bin components for the home-assistant package.
+Group: Binaries
+Requires: home-assistant-license = %{version}-%{release}
+
+%description bin
+bin components for the home-assistant package.
+
+
 %package license
 Summary: license components for the home-assistant package.
 Group: Default
@@ -138,7 +148,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1654267703
+export SOURCE_DATE_EPOCH=1654273077
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -210,6 +220,10 @@ popd
 
 %files
 %defattr(-,root,root,-)
+
+%files bin
+%defattr(-,root,root,-)
+/usr/bin/hass
 
 %files license
 %defattr(0644,root,root,0755)
