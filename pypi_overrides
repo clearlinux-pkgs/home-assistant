@@ -8,3 +8,4 @@ awesomeversion
 jinja2
 voluptuous
 cryptography
+requests

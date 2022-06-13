@@ -4,7 +4,7 @@
 #
 Name     : home-assistant
 Version  : 2022.6.5
-Release  : 357
+Release  : 358
 URL      : https://github.com/home-assistant/home-assistant/archive/2022.6.5/home-assistant-2022.6.5.tar.gz
 Source0  : https://github.com/home-assistant/home-assistant/archive/2022.6.5/home-assistant-2022.6.5.tar.gz
 Summary  : No detailed summary available
@@ -148,7 +148,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1655129863
+export SOURCE_DATE_EPOCH=1655135390
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -168,6 +168,7 @@ pypi-dep-fix.py . awesomeversion
 pypi-dep-fix.py . jinja2
 pypi-dep-fix.py . voluptuous
 pypi-dep-fix.py . cryptography
+pypi-dep-fix.py . requests
 python3 -m build --wheel --skip-dependency-check --no-isolation
 pushd ../buildavx2/
 export CFLAGS="$CFLAGS -m64 -march=x86-64-v3 -Wl,-z,x86-64-v3 -msse2avx"
@@ -185,6 +186,7 @@ pypi-dep-fix.py . awesomeversion
 pypi-dep-fix.py . jinja2
 pypi-dep-fix.py . voluptuous
 pypi-dep-fix.py . cryptography
+pypi-dep-fix.py . requests
 python3 -m build --wheel --skip-dependency-check --no-isolation
 
 popd
@@ -205,6 +207,7 @@ pypi-dep-fix.py %{buildroot} awesomeversion
 pypi-dep-fix.py %{buildroot} jinja2
 pypi-dep-fix.py %{buildroot} voluptuous
 pypi-dep-fix.py %{buildroot} cryptography
+pypi-dep-fix.py %{buildroot} requests
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
 echo ----[ mark ]----
