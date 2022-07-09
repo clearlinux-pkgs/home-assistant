@@ -4,7 +4,7 @@
 #
 Name     : home-assistant
 Version  : 2022.6.7
-Release  : 361
+Release  : 362
 URL      : https://github.com/home-assistant/home-assistant/archive/2022.6.7/home-assistant-2022.6.7.tar.gz
 Source0  : https://github.com/home-assistant/home-assistant/archive/2022.6.7/home-assistant-2022.6.7.tar.gz
 Summary  : No detailed summary available
@@ -148,7 +148,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1655909103
+export SOURCE_DATE_EPOCH=1657325028
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -158,18 +158,19 @@ export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=auto "
 export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=auto "
 export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=auto "
 export MAKEFLAGS=%{?_smp_mflags}
-pypi-dep-fix.py . attrs
-pypi-dep-fix.py . bcrypt
-pypi-dep-fix.py . httpx
-pypi-dep-fix.py . pip
 pypi-dep-fix.py . PyJWT
-pypi-dep-fix.py . python-slugify
+pypi-dep-fix.py . atomicwrites
+pypi-dep-fix.py . attrs
 pypi-dep-fix.py . awesomeversion
-pypi-dep-fix.py . jinja2
-pypi-dep-fix.py . voluptuous
+pypi-dep-fix.py . bcrypt
 pypi-dep-fix.py . cryptography
-pypi-dep-fix.py . requests
+pypi-dep-fix.py . httpx
 pypi-dep-fix.py . ifaddr
+pypi-dep-fix.py . jinja2
+pypi-dep-fix.py . pip
+pypi-dep-fix.py . python-slugify
+pypi-dep-fix.py . requests
+pypi-dep-fix.py . voluptuous
 python3 -m build --wheel --skip-dependency-check --no-isolation
 pushd ../buildavx2/
 export CFLAGS="$CFLAGS -m64 -march=x86-64-v3 -Wl,-z,x86-64-v3 -msse2avx"
@@ -177,18 +178,19 @@ export CXXFLAGS="$CXXFLAGS -m64 -march=x86-64-v3 -Wl,-z,x86-64-v3 -msse2avx "
 export FFLAGS="$FFLAGS -m64 -march=x86-64-v3 -Wl,-z,x86-64-v3 "
 export FCFLAGS="$FCFLAGS -m64 -march=x86-64-v3 "
 export LDFLAGS="$LDFLAGS -m64 -march=x86-64-v3 "
-pypi-dep-fix.py . attrs
-pypi-dep-fix.py . bcrypt
-pypi-dep-fix.py . httpx
-pypi-dep-fix.py . pip
 pypi-dep-fix.py . PyJWT
-pypi-dep-fix.py . python-slugify
+pypi-dep-fix.py . atomicwrites
+pypi-dep-fix.py . attrs
 pypi-dep-fix.py . awesomeversion
-pypi-dep-fix.py . jinja2
-pypi-dep-fix.py . voluptuous
+pypi-dep-fix.py . bcrypt
 pypi-dep-fix.py . cryptography
-pypi-dep-fix.py . requests
+pypi-dep-fix.py . httpx
 pypi-dep-fix.py . ifaddr
+pypi-dep-fix.py . jinja2
+pypi-dep-fix.py . pip
+pypi-dep-fix.py . python-slugify
+pypi-dep-fix.py . requests
+pypi-dep-fix.py . voluptuous
 python3 -m build --wheel --skip-dependency-check --no-isolation
 
 popd
@@ -199,18 +201,19 @@ rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/home-assistant
 cp %{_builddir}/core-2022.6.7/LICENSE.md %{buildroot}/usr/share/package-licenses/home-assistant/7df059597099bb7dcf25d2a9aedfaf4465f72d8d
 pip install --root=%{buildroot} --no-deps --ignore-installed dist/*.whl
-pypi-dep-fix.py %{buildroot} attrs
-pypi-dep-fix.py %{buildroot} bcrypt
-pypi-dep-fix.py %{buildroot} httpx
-pypi-dep-fix.py %{buildroot} pip
 pypi-dep-fix.py %{buildroot} PyJWT
-pypi-dep-fix.py %{buildroot} python-slugify
+pypi-dep-fix.py %{buildroot} atomicwrites
+pypi-dep-fix.py %{buildroot} attrs
 pypi-dep-fix.py %{buildroot} awesomeversion
-pypi-dep-fix.py %{buildroot} jinja2
-pypi-dep-fix.py %{buildroot} voluptuous
+pypi-dep-fix.py %{buildroot} bcrypt
 pypi-dep-fix.py %{buildroot} cryptography
-pypi-dep-fix.py %{buildroot} requests
+pypi-dep-fix.py %{buildroot} httpx
 pypi-dep-fix.py %{buildroot} ifaddr
+pypi-dep-fix.py %{buildroot} jinja2
+pypi-dep-fix.py %{buildroot} pip
+pypi-dep-fix.py %{buildroot} python-slugify
+pypi-dep-fix.py %{buildroot} requests
+pypi-dep-fix.py %{buildroot} voluptuous
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
 echo ----[ mark ]----
