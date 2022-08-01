@@ -11,3 +11,4 @@ pip
 python-slugify
 requests
 voluptuous
+yarl
